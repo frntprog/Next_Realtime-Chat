@@ -36,8 +36,6 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async jwt({ token, user }) {
-      console.log(user);
-
       const dbUserResult = (await fetchRedis("get", `user:${token.id}`)) as
         | string
         | null;
@@ -60,8 +58,6 @@ export const authOptions: NextAuthOptions = {
       };
     },
     async session({ session, token }) {
-      // console.log(session, token);
-
       if (token) {
         session.user.id = token.id;
         session.user.name = token.name;
