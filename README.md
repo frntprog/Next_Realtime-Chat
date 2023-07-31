@@ -1,3 +1,11 @@
+The best features: 
+- Instant real-time messaging using Upstash Redis
+- Full friendship system to add, accept or deny friends
+- Super fast database queries with Redis
+- Responsive UI built with TailwindCSS
+- Protection of sensitive routes
+- Google Authentication
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
